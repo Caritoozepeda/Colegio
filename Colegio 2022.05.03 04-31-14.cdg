@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Colegio">
+  <ClassDiagramComponents>
+    <Class name="Alumno" package="colegio" visibility="public" xPosition="404.0" yPosition="-17.0">
+      <Fields>
+        <Field name="legajo" type="int" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="materiasAl" type="HashSet&lt;Materia&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="p_legajo"/>
+          <Argument type="String" name="p_apellido"/>
+          <Argument type="String" name="p_nombre"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getLegajo" returnType="int" visibility="public"/>
+        <Method name="setLegajo" returnType="void" visibility="public">
+          <Argument type="int" name="legajo"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="agregarMateria" returnType="boolean" visibility="public">
+          <Argument type="Materia" name="m"/>
+        </Method>
+        <Method name="cantindadMaterias" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Colegio" package="colegio" visibility="public" xPosition="416.0" yPosition="491.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Materia" package="colegio" visibility="public" xPosition="719.0" yPosition="491.0">
+      <Fields>
+        <Field name="idMateria" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="idMateria"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="anio"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getIdMateria" returnType="int" visibility="public"/>
+        <Method name="setIdMateria" returnType="void" visibility="public">
+          <Argument type="int" name="idMateria"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getAnio" returnType="int" visibility="public"/>
+        <Method name="setAnio" returnType="void" visibility="public">
+          <Argument type="int" name="anio"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ColegioVista" package="colegio.vistas" visibility="public" xPosition="25.0" yPosition="284.0">
+      <Fields>
+        <Field name="materias" type="HashSet&lt;Materia&gt;" visibility="private"/>
+        <Field name="alumnos" type="HashSet&lt;Alumno&gt;" visibility="private"/>
+        <Field name="m1" type="Materia" visibility="package"/>
+        <Field name="a1" type="Alumno" visibility="package"/>
+        <Field name="escritorio" type="javax.swing.JDesktopPane" visibility="private"/>
+        <Field name="jCheckBoxMenuItem1" type="javax.swing.JCheckBoxMenuItem" visibility="private"/>
+        <Field name="jCheckBoxMenuItem2" type="javax.swing.JCheckBoxMenuItem" visibility="private"/>
+        <Field name="jCheckBoxMenuItem3" type="javax.swing.JCheckBoxMenuItem" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu3" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu5" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu6" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu7" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu8" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar2" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuFormilarioDeAlumnos" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuFormularioDeMaterias" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem2" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem3" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem4" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem5" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuSalir" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuformularioDeInscripcion" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jPopupMenu1" type="javax.swing.JPopupMenu" visibility="private"/>
+        <Field name="jPopupMenu2" type="javax.swing.JPopupMenu" visibility="private"/>
+        <Field name="jTabbedPane3" type="javax.swing.JTabbedPane" visibility="private"/>
+        <Field name="jTabbedPane4" type="javax.swing.JTabbedPane" visibility="private"/>
+        <Field name="menu" type="javax.swing.JMenuBar" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jMenuItem5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuFormularioDeMateriasActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuformularioDeInscripcionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FormularioDeAlumnos" package="colegio.vistas" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="alumnos" type="HashSet&lt;Alumno&gt;" visibility="private"/>
+        <Field name="jBtnGuardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jBtnNuevo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jBtnSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jtxtApellido" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtxtLegajo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtxtNombre" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="HashSet&lt;Alumno&gt;" name="alumnos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jBtnGuardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBtnNuevoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBtnSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtNombreFocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtApellidoFocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtLegajoKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtApellidoKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtNombreKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtLegajoFocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="activar" returnType="void" visibility="private"/>
+        <Method name="desactivar" returnType="void" visibility="private"/>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="FormularioDeInscrip" package="colegio.vistas" visibility="public" xPosition="2015.0" yPosition="153.0">
+      <Fields>
+        <Field name="materias" type="HashSet&lt;Materia&gt;" visibility="private"/>
+        <Field name="alumnos" type="HashSet&lt;Alumno&gt;" visibility="private"/>
+        <Field name="jBtnInscribir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jBtnSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jComboAlumno" type="javax.swing.JComboBox&lt;Alumno&gt;" visibility="private"/>
+        <Field name="jComboMateria" type="javax.swing.JComboBox&lt;Materia&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="HashSet&lt;Alumno&gt;" name="alumnos"/>
+          <Argument type="HashSet&lt;Materia&gt;" name="materias"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jComboAlumnoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jComboMateriaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBtnInscribirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBtnSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="agregarMateriaCombo" returnType="void" visibility="private"/>
+        <Method name="agregarAlumnoCombo" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="FormularioDeMaterias" package="colegio.vistas" visibility="public" xPosition="1132.0" yPosition="764.0">
+      <Fields>
+        <Field name="materias" type="HashSet&lt;Materia&gt;" visibility="private"/>
+        <Field name="jBtnGuardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jBtnNuevo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jBtnSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jtxtAnio" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtxtCodigo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jtxtNombre" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="HashSet&lt;Materia&gt;" name="materias"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jBtnGuardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBtnNuevoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jBtnSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtCodigoKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtAnioKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtNombreFocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtAnioFocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtCodigoFocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jtxtNombreKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="desactivar" returnType="void" visibility="private"/>
+        <Method name="activar" returnType="void" visibility="private"/>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="materias" source="colegio.vistas.FormularioDeInscrip" target="colegio.Materia" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashSet&lt;Materia&gt;"/>
+    <HasRelation name="materias" source="colegio.vistas.ColegioVista" target="colegio.Materia" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashSet&lt;Materia&gt;"/>
+    <HasRelation name="alumnos" source="colegio.vistas.ColegioVista" target="colegio.Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashSet&lt;Alumno&gt;"/>
+    <UseRelation source="colegio.Alumno" target="colegio.Materia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="materias" source="colegio.vistas.FormularioDeMaterias" target="colegio.Materia" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashSet&lt;Materia&gt;"/>
+    <HasRelation name="alumnos" source="colegio.vistas.FormularioDeAlumnos" target="colegio.Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashSet&lt;Alumno&gt;"/>
+    <HasRelation name="m1" source="colegio.vistas.ColegioVista" target="colegio.Materia" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="jComboMateria" source="colegio.vistas.FormularioDeInscrip" target="colegio.Materia" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="a1" source="colegio.vistas.ColegioVista" target="colegio.Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="jComboAlumno" source="colegio.vistas.FormularioDeInscrip" target="colegio.Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="materiasAl" source="colegio.Alumno" target="colegio.Materia" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashSet&lt;Materia&gt;"/>
+    <HasRelation name="alumnos" source="colegio.vistas.FormularioDeInscrip" target="colegio.Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="HashSet&lt;Alumno&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
